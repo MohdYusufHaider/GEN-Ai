@@ -1,0 +1,187 @@
+Q1. What is Generative AI
+Ans.
+Generative AI refers to a class of artificial intelligence systems that generate new content, such as text, images, music, or videos, based on learned patterns from data. Examples include GPT for text and DALL-E for images.
+
+Q2. How is Generative AI different from traditional AI?
+Ans.
+Traditional AI focuses on classification, prediction, and decision-making tasks based on existing data.
+Generative AI creates new, unique content that resembles the training data.
+
+
+Q3. Name two applications of Generative AI in the industry?
+Ans.
+Name Two Applications of Generative AI in the Industry:
+Healthcare: Generating synthetic medical data to improve machine learning models.
+Entertainment: AI-generated art, music composition, and scriptwriting.
+
+Q4. What are some challenges associated with Generative AI?
+Ans.
+Challenges Associated with Generative AI:
+Ethical concerns, such as deepfakes or misuse of generated content.
+High computational costs for training and deploying models.
+Risk of generating biased or inaccurate content due to flawed training data.
+
+Q5. Why is Generative AI important for modern applications?
+Ans.
+Generative AI enables creativity, personalization, and automation at scale, unlocking capabilities such as creating synthetic training data, generating realistic simulations, and assisting human creativity.
+
+Q6. What is probabilistic modeling in the context of Generative AI?
+Ans.
+What is Probabilistic Modeling in the Context of Generative AI?
+Probabilistic modeling involves using probability distributions to model uncertainties in data and generate new samples that align with observed patterns.
+
+
+Q7.Define a generative model?
+Ans.
+A generative model learns the underlying distribution of a dataset to create new samples that resemble the original data. Examples include Variational Autoencoders (VAEs) and Generative Adversarial Networks (GANs).
+
+
+Q8. Explain how an n-gram model works in text generation?
+Ans.
+m Models in Text Generation
+How Does an N-gram Model Work?
+An N-gram model predicts the next word in a sequence based on the previous 
+
+N−1 words. For example, in a bigram (2-gram) model, each word depends on the one preceding it.
+
+
+Q9. What are the limitations of n-gram models?
+Ans.
+Fixed context window; cannot capture long-term dependencies.
+Require large datasets for all possible n-grams.
+Struggle with handling unseen n-grams (sparsity issues).
+
+Q10.How can you improve the performance of an n-gram model?
+Ans.
+Use smoothing techniques (e.g., Laplace or Kneser-Ney smoothing).
+Increase 𝑁 to capture larger contexts, balancing it with computational cost.
+Back-off or interpolation models to combine probabilities of different 
+𝑁-gram levels.
+
+
+Q11. What is the Markov assumption, and how does it apply to text generation?
+Ans.
+The Markov assumption states that the probability of a word depends only on a fixed number of preceding words (its context), simplifying language modeling.
+
+
+Q12. Why are probabilistic models important in generative AI?
+Ans.
+They provide a mathematical framework for learning data distributions, handling uncertainty, and generating realistic outputs consistent with training data.
+
+
+Q13. What is an autoencoder?
+Ans.
+An autoencoder is a neural network that learns to encode input data into a compressed latent space and then reconstructs it back to the original form.
+
+Q14. How does a VAE differ from a standard autoencoder?
+Ans.
+A VAE imposes a probabilistic structure on the latent space, learning distributions rather than deterministic points.
+VAEs generate new data by sampling from the learned latent space distribution.
+
+
+Q15. Why are VAEs useful in generative modeling?
+Ans.
+VAEs provide smooth latent spaces, enabling interpolation between data points and realistic data generation.
+
+Q16. What role does the decoder play in an autoencoder?
+Ans.
+The decoder reconstructs the original input from the compressed latent representation.
+
+Q17.How does the latent space affect text generation in a VAE?
+Ans.
+A well-structured latent space ensures smooth transitions between data points, allowing meaningful interpolation and diverse text generation.
+
+
+Q18.What is the purpose of the Kullback-Leibler (KL) divergence term in VAEs?
+Ans.
+KL divergence regularizes the latent space by encouraging it to follow a standard normal distribution, ensuring meaningful sampling.
+
+Q19.How can you prevent overfitting in a VAE?
+Ans.
+Regularization (e.g., KL divergence term).
+Dropout in the encoder and decoder.
+Using a larger, more diverse dataset.
+
+
+Q20.Explain why VAEs are commonly used for unsupervised learning tasks?
+Ans.
+VAEs can learn meaningful representations of data without labeled examples, making them suitable for clustering, anomaly detection, and generative tasks.
+
+
+Q21.What is a transformer model?
+Ans.
+A transformer model uses self-attention mechanisms to process sequences, enabling parallel computation and handling long-range dependencies effectively.
+
+Q22.Explain the purpose of self-attention in transformers?
+Ans.
+Self-attention allows the model to focus on relevant parts of the input sequence, capturing contextual relationships between tokens.
+
+
+Q23.How does a GPT model generate text?
+Ans.
+GPT uses a transformer decoder to predict the next token in a sequence, conditioned on all preceding tokens.
+
+Q24.What are the key differences between a GPT model and an RNN?
+Ans.
+GPT uses self-attention, enabling parallelism and handling long-range dependencies, while RNNs process tokens sequentially.
+GPT does not suffer from vanishing gradients as RNNs often do.
+
+
+Q25.How does fine-tuning improve a pre-trained GPT model?
+Ans.
+Fine-tuning adapts pre-trained GPT models to specific tasks or domains using smaller, task-specific datasets.
+
+Q26. What is zero-shot learning in the context of GPT models?
+Ans.
+Zero-shot learning involves performing tasks without task-specific training, leveraging GPT's broad knowledge from pretrainin.
+
+Q27.Describe how prompt engineering can impact GPT model performanc?
+Ans.
+Carefully designed prompts can guide GPT to generate desired outputs and improve task accuracy without retraining.
+
+Q28.Why are large datasets essential for training GPT models?
+Ans.
+Large datasets capture diverse linguistic patterns, enabling GPT to generalize well across tasks and domains.
+
+Q29.What are potential ethical concerns with GPT models?
+Ans.
+Generation of biased or harmful content.
+Use in spreading misinformation or creating deepfakes.
+Data privacy concerns from training datasets.
+
+
+Q30.How does the attention mechanism contribute to GPT’s ability to handle
+long-range dependencies?
+Ans.
+Attention weights the importance of each token relative to others, enabling the model to capture global relationships in the sequence.
+
+
+Q31.What are some limitations of GPT models for real-world applications?
+Ans.
+Inability to verify factual correctness.
+Computationally expensive training and deployment.
+Struggles with out-of-domain or ambiguous queries.
+
+
+Q32.How can GPT models be adapted for domain-specific text generation?
+Ans.
+Fine-tune with domain-specific data.
+Use domain-specific prompts or embeddings.
+
+
+Q33.What are some common metrics for evaluating text generation quality?
+Ans.
+BLEU: Measures similarity to reference texts.
+ROUGE: Evaluates overlap of n-grams with reference texts.
+Perplexity: Measures fluency by evaluating model uncertainty.
+
+
+Q34.Explain the difference between deterministic and probabilistic text
+generation?
+Ans.
+Deterministic: Greedy decoding selects the most probable next token.
+Probabilistic: Sampling introduces randomness for diversity
+Q35.How does beam search improve text generation in language models?
+Ans.
+Beam search explores multiple hypotheses at each decoding step, maintaining the top 
+k most likely sequences, resulting in better outputs compared to greedy search.
